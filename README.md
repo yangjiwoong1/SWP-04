@@ -1,2 +1,2 @@
 # 2020xxxx	 Jiwoong yang
-# Kookmin Univ. SW
+# Kookmin Univ. Computer Science
