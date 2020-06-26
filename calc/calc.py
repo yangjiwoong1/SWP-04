@@ -1,6 +1,10 @@
 from cgi import parse_qs
-
-from template import html
+try:
+    from template import html
+except ModuleNotFoundError:
+    import sys
+    sys.path.append('/usr/local/swp1')
+    from template import html
 
 def application(environ, start_response):
     d = parse_qs(environ['QUERY_STRING'])
